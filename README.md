@@ -82,7 +82,7 @@ Ver [docs/DEMO.md](docs/DEMO.md)
 ## Clonar (equipo)
 
 ```bash
-git clone https://github.com/TU_USUARIO/The-NewsBreakers.git
+git clone https://github.com/JAVGP444/The-NewsBreakers.git
 cd The-NewsBreakers
 ```
 
