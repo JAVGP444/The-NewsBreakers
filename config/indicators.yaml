@@ -1,0 +1,43 @@
+# Pesos calibrados con ejemplos del datathon
+# Ejemplo confiable (+): "Según WOAH, el brote de H5N1 en aves fue confirmado por laboratorio"
+# Ejemplo incierto (~): "Circulan rumores de gripe aviar en la región sin fuente citada"
+# Ejemplo sospechoso (-): "PANDEMIA INMINENTE — el gobierno oculta la cura milagrosa, COMPARTE YA"
+
+base_score: 45
+
+weights:
+  has_topic_keywords: 12
+  multiple_topic_keywords: 8       # 3+ términos veterinarios
+  has_trust_signals: 22
+  has_official_domain_link: 18
+  low_alarm_density: 12
+  gdelt_corroboration: 18
+  official_feed_match: 15        # Coincide con titulares WOAH/OMS/CDC
+  fact_check_domain_link: 12
+  laboratory_confirmed: 8
+  has_cited_urls: 5
+
+penalties:
+  high_alarm_density: -28
+  no_sources: -18
+  conspiracy_language: -32
+  sensationalism_high: -15       # 2+ flags sensacionalismo
+  contradicts_official: -40
+  gdelt_no_coverage_claim: -12   # Afirma brote grave sin cobertura GDELT
+  off_topic: -10
+
+verdict_thresholds:
+  reliable: 72
+  uncertain: 45
+  suspicious: 0
+
+verdict_labels:
+  reliable:
+    es: "Probablemente confiable"
+    en: "Likely reliable"
+  uncertain:
+    es: "Incierto — requiere verificación adicional"
+    en: "Uncertain — needs further verification"
+  suspicious:
+    es: "Alta probabilidad de desinformación"
+    en: "High likelihood of misinformation"

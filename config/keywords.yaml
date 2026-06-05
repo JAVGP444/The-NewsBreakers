@@ -1,0 +1,417 @@
+# Diccionario veterinario multilingüe — The NewsBreakers
+# topic: relevancia salud animal | alarm: desinformación | trust: señales de credibilidad
+
+topic_keywords:
+  es:
+    - gripe aviar
+    - influenza aviar
+    - influenza aviar de alta patogenicidad
+    - H5N1
+    - H5N2
+    - H7N9
+    - brote
+    - brote epizoótico
+    - epizootia
+    - peste porcina africana
+    - peste porcina
+    - peste porcina clásica
+    - fiebre aftosa
+    - fiebre del valle del rift
+    - encefalopatía espongiforme bovina
+    - enfermedad de aujeszky
+    - salmonella
+    - campylobacter
+    - brucelosis
+    - tuberculosis bovina
+    - rabia
+    - ébola animal
+    - nodularia contagiosa
+    - dermatosis nodular
+    - lumpy skin disease
+    - viruela ovina
+    - viruela caprina
+    - enfermedad de newcastle
+    - rinotraqueítis infecciosa bovina
+    - diarrea viral bovina
+    - ganado
+    - ganado bovino
+    - aves de corral
+    - pollos de engorde
+    - gallinas ponedoras
+    - cerdos
+    - porcinos
+    - ovinos
+    - caprinos
+    - equinos
+    - animales de granja
+    - fauna silvestre
+    - reservorio animal
+    - vacunación animal
+    - sacrificio sanitario
+    - cuarentena veterinaria
+    - zoónosis
+    - salto de especie
+    - vigilancia epidemiológica
+    - WOAH
+    - OMSA
+    - senasa
+    - ministerio de agricultura
+  en:
+    - avian flu
+    - avian influenza
+    - highly pathogenic avian influenza
+    - HPAI
+    - bird flu
+    - H5N1
+    - H5N2
+    - H7N9
+    - outbreak
+    - epizootic
+    - epizootic disease
+    - african swine fever
+    - ASF
+    - classical swine fever
+    - foot and mouth disease
+    - FMD
+    - rift valley fever
+    - bovine spongiform encephalopathy
+    - BSE
+    - mad cow disease
+    - pseudorabies
+    - aujeszky disease
+    - salmonella
+    - campylobacter
+    - brucellosis
+    - bovine tuberculosis
+    - rabies
+    - lumpy skin disease
+    - sheep pox
+    - goat pox
+    - newcastle disease
+    - infectious bovine rhinotracheitis
+    - bovine viral diarrhea
+    - livestock
+    - poultry
+    - broiler chickens
+    - layer hens
+    - swine
+    - pigs
+    - cattle
+    - sheep
+    - goats
+    - farm animals
+    - wildlife reservoir
+    - animal vaccination
+    - culling
+    - depopulation
+    - veterinary quarantine
+    - zoonosis
+    - zoonotic spillover
+    - epidemiological surveillance
+    - WOAH
+    - OIE
+    - USDA APHIS
+    - DEFRA
+  fr:
+    - grippe aviaire
+    - influenza aviaire hautement pathogène
+    - H5N1
+    - épidémie animale
+    - épizootie
+    - peste porcine africaine
+    - peste porcine
+    - fièvre aphteuse
+    - fièvre de la vallée du rift
+    - encéphalopathie spongiforme bovine
+    - maladie de Newcastle
+    - salmonelle
+    - brucellose
+    - rage
+    - bétail
+    - volaille
+    - porcins
+    - ovins
+    - caprins
+    - zoonose
+    - abattage sanitaire
+    - quarantaine vétérinaire
+    - WOAH
+  pt:
+    - gripe aviária
+    - influenza aviária de alta patogenicidade
+    - H5N1
+    - surto
+    - epizootia
+    - peste suína africana
+    - peste suína
+    - febre aftosa
+    - febre do vale do rift
+    - encefalopatia espongiforme bovina
+    - doença de Newcastle
+    - brucelose
+    - raiva
+    - gado
+    - aves
+    - suínos
+    - bovinos
+    - zoonose
+    - vacinação animal
+    - abate sanitário
+    - WOAH
+  de:
+    - Vogelgrippe
+    - Aviäre Influenza
+    - H5N1
+    - Ausbruch
+    - Tierseuche
+    - Epizootie
+    - Afrikanische Schweinepest
+    - Klassische Schweinepest
+    - Maul- und Klauenseuche
+    - Rift-Valley-Fieber
+    - BSE
+    - Newcastle-Krankheit
+    - Brucellose
+    - Tollwut
+    - Nutztiere
+    - Geflügel
+    - Schweine
+    - Rinder
+    - Zoonose
+    - Tierimpfung
+    - WOAH
+  it:
+    - influenza aviaria
+    - epizoozia
+    - peste suina africana
+    - peste suina
+    - afta epizootica
+    - febbre della valle del Rift
+    - encefalopatia spongiforme bovina
+    - malattia di Newcastle
+    - brucellosi
+    - rabbia
+    - bestiame
+    - pollame
+    - suini
+    - bovini
+    - zoonosi
+    - WOAH
+  zh:
+    - 禽流感
+    - 高致病性禽流感
+    - H5N1
+    - 动物疫情
+    - 动物疫病
+    - 非洲猪瘟
+    - 猪瘟
+    - 口蹄疫
+    - 裂谷热
+    - 疯牛病
+    - 新城疫
+    - 布鲁氏菌病
+    - 狂犬病
+    - 牲畜
+    - 家禽
+    - 猪
+    - 牛
+    - 人兽共患病
+    - 扑杀
+    - 检疫
+  ar:
+    - إنفلونزا الطيور
+    - إنفلونزا الطيور عالية الضراوة
+    - H5N1
+    - تفشي
+    - وباء حيواني
+    - الأوبئة الحيوانية
+    - حمى الخنازير الأفريقية
+    - الحمى القلاعية
+    - حمى وادي الرفت
+    - جنون البقر
+    - مرض نيوكاسل
+    - البروسيلا
+    - داء الكلب
+    - الماشية
+    - الدواجن
+    - الأمراض الحيوانية المشتركة
+  ru:
+    - птичий грипп
+    - высокопатогенный грипп птиц
+    - H5N1
+    - вспышка
+    - эпизоотия
+    - африканская чума свиней
+    - классическая чума свиней
+    - ящур
+    - лихорадка Рифт-Вэлли
+    - КЭБ
+    - болезнь Ньюкасла
+    - бруцеллёз
+    - бешенство
+    - сельхозживотные
+    - птица
+    - свиньи
+    - крупный рогатый скот
+    - зооноз
+  ja:
+    - 鳥インフルエンザ
+    - 高病原性鳥インフルエンザ
+    - H5N1
+    - 家畜伝染病
+    - 動物の疫病
+    - アフリカ豚熱
+    - 古典的豚熱
+    - 口蹄疫
+    - リフトバレー熱
+    - 狂牛病
+    - ニューカッスル病
+    - ブルセラ症
+    - 狂犬病
+    - 家畜
+    - 家禽
+    - 人獣共通感染症
+
+alarm_keywords:
+  es:
+    - alerta máxima
+    - pandemia inminente
+    - apocalipsis
+    - no te vacunes
+    - las vacunas matan
+    - conspiración
+    - gobierno oculta
+    - ocultan la verdad
+    - cura milagrosa
+    - remedio natural secreto
+    - comparte antes de que borren
+    - los medios mienten
+    - big pharma
+    - plandemia
+    - bioweapon
+    - arma biológica
+    - cuarentena falsa
+    - no comas carne
+    - todos van a morir
+  en:
+    - imminent pandemic
+    - apocalypse
+    - don't vaccinate
+    - vaccines kill
+    - conspiracy
+    - government hiding
+    - they don't want you to know
+    - miracle cure
+    - secret natural remedy
+    - share before deleted
+    - mainstream media lies
+    - big pharma
+    - plandemic
+    - bioweapon
+    - biological weapon
+    - fake quarantine
+    - everyone will die
+    - hoax outbreak
+  fr:
+    - pandémie imminente
+    - complot
+    - remède miracle
+    - ne vous vaccinez pas
+    - les médias mentent
+    - arme biologique
+  pt:
+    - pandemia iminente
+    - conspiração
+    - cura milagrosa
+    - não se vacine
+    - arma biológica
+  de:
+    - bevorstehende Pandemie
+    - Verschwörung
+    - Wunderheilung
+    - impft euch nicht
+    - Biowaffe
+  it:
+    - pandemia imminente
+    - complotto
+    - cura miracolosa
+    - non vaccinatevi
+  zh:
+    - 即将大流行
+    - 阴谋
+    - 神奇疗法
+    - 不要接种疫苗
+    - 生物武器
+  ar:
+    - جائحة وشيكة
+    - مؤامرة
+    - علاج معجزة
+    - لا تت vaccinated
+  ru:
+    - неминуемая пандемия
+    - заговор
+    - чудо-лечение
+    - не вакцинируйтесь
+  ja:
+    - パンデミック間近
+    - 陰謀
+    - 奇跡の治療
+    - ワクチンを打つな
+
+trust_signals:
+  es:
+    - según la OMS
+    - según la WOAH
+    - según OMSA
+    - informe oficial
+    - datos oficiales
+    - estudio publicado
+    - revisado por pares
+    - ministerio de agricultura
+    - autoridades sanitarias
+    - declaración oficial
+    - boletín epidemiológico
+    - vigilancia oficial
+    - comunicado de prensa oficial
+  en:
+    - according to WHO
+    - according to WOAH
+    - official report
+    - official data
+    - peer-reviewed
+    - ministry of agriculture
+    - health authorities
+    - official statement
+    - epidemiological bulletin
+    - CDC reports
+    - USDA APHIS
+    - confirmed case
+    - laboratory confirmed
+  fr:
+    - selon l'OMS
+    - selon l'OMSA
+    - rapport officiel
+    - données officielles
+    - autorités sanitaires
+  pt:
+    - segundo a OMS
+    - segundo a WOAH
+    - relatório oficial
+    - dados oficiais
+    - autoridades sanitárias
+  de:
+    - laut WHO
+    - laut WOAH
+    - offizieller Bericht
+    - offizielle Daten
+    - Gesundheitsbehörden
+
+disease_entities:
+  # Entidades para construir consultas GDELT
+  - avian influenza
+  - H5N1
+  - african swine fever
+  - foot and mouth disease
+  - lumpy skin disease
+  - gripe aviar
+  - peste porcina africana

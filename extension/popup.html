@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body { width: 340px; font-family: system-ui, sans-serif; background: #0c1524; color: #f0f4fc; padding: 14px; }
+    h1 { font-size: 14px; margin-bottom: 4px; }
+    p { font-size: 11px; color: #8ba3c7; margin-bottom: 12px; }
+    button { width: 100%; padding: 10px; border: none; border-radius: 8px; background: #2563eb; color: white; font-weight: 600; cursor: pointer; }
+    button:disabled { opacity: 0.6; }
+    #result { margin-top: 12px; font-size: 12px; }
+    .verdict { font-weight: 700; font-size: 15px; margin-bottom: 6px; }
+    .reliable { color: #10b981; } .uncertain { color: #f59e0b; } .suspicious { color: #ef4444; }
+    ul { padding-left: 16px; color: #8ba3c7; margin-top: 6px; }
+    .err { color: #ef4444; font-size: 11px; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>The NewsBreakers</h1>
+  <p>Verificar la página actual sobre salud animal</p>
+  <button id="verify">Verificar esta página</button>
+  <div id="result"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+official_domains:
+  - who.int
+  - woah.org
+  - fao.org
+  - cdc.gov
+  - efsa.europa.eu
+  - ec.europa.eu
+  - gov.uk
+  - agriculture.gouv.fr
+  - senasa.gob.ar
+  - sag.gob.cl
+
+fact_check_domains:
+  - politifact.com
+  - snopes.com
+  - factcheck.org
+  - maldita.es
+  - newtral.es
+  - fullfact.org
+
+certifications:
+  - name: IFCN
+    description: International Fact-Checking Network
+    members_url: https://ifcncodeofprinciples.poynter.org/signatories
+
+gdelt:
+  project_url: https://www.gdeltproject.org/
+  doc_api: https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/

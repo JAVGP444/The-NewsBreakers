@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+
+# Node
+node_modules/
+.next/
+out/
+
+# Datos locales (mantener estructura, no archivos pesados)
+data/raw/*
+data/processed/*
+data/databases/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/databases/.gitkeep
+
+# Assets grandes opcionales
+assets/videos/*
+assets/pdfs/*
+!assets/images/.gitkeep
+!assets/videos/.gitkeep
+!assets/pdfs/.gitkeep
+!assets/excels/.gitkeep
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
