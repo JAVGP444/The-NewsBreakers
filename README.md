@@ -1,41 +1,42 @@
 # The NewsBreakers
 
-**Verificador profesional de desinformación sobre salud animal y brotes epizoóticos.**
+**Verificador profesional de desinformación en salud animal y brotes epizoóticos.**
 
-Proyecto de datathon: analiza texto o URLs en **10 idiomas**, contrasta con **GDELT**, **WOAH**, **OMS** y **CDC**, y devuelve un veredicto explicable con indicadores y recomendaciones.
+## Qué hace
+- Detecta fake news en texto y URL.
+- Soporta hasta 10 idiomas.
+- Contrasta con fuentes oficiales WOAH/WHO/CDC, GDELT y verificadores de hechos.
+- Genera veredictos explicables con score, indicadores y recomendaciones.
 
-## Equipo
-
-**The NewsBreakers**
-
-## Ubicación
-
-```
-C:\Users\javie\OneDrive\Escritorio\the-newsbreakers
-```
+## Por qué es profesional
+- Arquitectura clara: frontend, API y motor de análisis.
+- Resultados explicables para jurado y stakeholders.
+- Documentación lista: guías, demo, materiales PDF y notas técnicas.
+- Extensión Chrome que reutiliza la misma API.
 
 ## Arquitectura
 
-```
+```text
 Usuario → Web (Next.js) ──→ API (FastAPI) ──→ Motor de análisis
                                     ├── GDELT (cobertura global)
-                                    ├── Feeds oficiales (WOAH/OMS/CDC)
+                                    ├── Feeds oficiales (WOAH/WHO/CDC)
                                     └── Clasificador por keywords
 Extensión Chrome ──────────→ misma API
 ```
 
 ## Inicio rápido
 
-### API
+### Backend
 
 ```powershell
 cd api
-.venv\Scripts\activate
+python -m venv .venv
+.\.venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-### Web
+### Frontend
 
 ```powershell
 cd web
@@ -43,43 +44,68 @@ npm install
 npm run dev
 ```
 
-→ http://localhost:3000 · API docs: http://localhost:8000/docs
+Accede a:
 
-### Feeds oficiales
+- `http://localhost:3003` (app web). API: `http://localhost:8000/docs`
+- `http://localhost:8000/docs`
 
-```powershell
-api\.venv\Scripts\python.exe tools\official_scraper.py
-```
-
-## Estructura
+## Estructura del proyecto
 
 | Carpeta | Uso |
 |---------|-----|
-| `api/` | Backend y motor de análisis |
-| `web/` | Página de consultoría (demo jurado) |
+| `api/` | Backend, FastAPI y motor de análisis |
+| `web/` | Interfaz de usuario de demostración |
 | `extension/` | Extensión Chrome |
-| `config/` | Keywords, indicadores, fuentes |
+| `config/` | Keywords, indicadores y fuentes confiables |
 | `tools/` | Scrapers y utilidades |
-| `assets/images` | Logo, capturas |
-| `assets/pdfs` | Brief datathon |
-| `assets/excels` | Datasets Excel |
-| `data/raw` | GDELT exports, feeds JSON |
-| `data/databases` | SQLite / CSV grandes |
+| `assets/images` | Logos y capturas |
+| `assets/pdfs` | Documentación profesional |
+| `assets/excels` | Datasets y tablas |
+| `data/raw` | Exportaciones GDELT y feeds brutos |
+| `data/databases` | SQLite y CSV de trabajo |
 
-## API
+## Trabajo en equipo
+
+Este repo está preparado para colaboración en GitHub (datathon / portfolio):
+
+- **[docs/TEAM_WORKFLOW.md](docs/TEAM_WORKFLOW.md)** — Flujo de ramas (`develop`, `feature/*`), Codespaces, Live Share y tips de demo.
+- **[.github/CONTRIBUTING.md](.github/CONTRIBUTING.md)** — Cómo abrir PRs, revisar código y convenciones de commits.
+- **Plantillas** — Issues (bug / feature) y checklist de Pull Request en `.github/`.
+
+Modelo recomendado: `feature/*` → `develop` → `master`, con revisiones y CI automático en cada PR.
+
+## Documentación clave
+- `docs/DEMO.md` — Guía de presentación para jurado.
+- `docs/TEAM_WORKFLOW.md` — Colaboración en equipo y GitHub.
+- `docs/methodology.md` — Metodología del proyecto.
+- `docs/identificacion-fake-news.md` — Guía práctica para detectar fake news.
+- `assets/pdfs/Identificacion-noticias-falsas.pdf` — Documento técnico listo.
+- `api/README.md` — Guía de backend.
+- `web/README.md` — Guía de frontend.
+
+## Fuentes recomendadas para verificación
+1. WAHIS
+2. WOAH
+3. CDC
+4. WHO
+5. FAO
+6. ProMED
+7. PubMed
+8. Scopus
+9. Web of Science
+10. Revistas científicas especializadas
+
+## Endpoints principales
 
 | Método | Ruta | Descripción |
 |--------|------|-------------|
 | POST | `/analyze` | Analiza texto |
 | POST | `/analyze-url` | Analiza URL |
 | GET | `/gdelt/search` | Búsqueda GDELT |
-| GET | `/health` | Estado |
+| GET | `/gdelt/query-from-text` | Genera consulta GDELT |
+| GET | `/health` | Estado del servicio |
 
-## Demo
-
-Ver [docs/DEMO.md](docs/DEMO.md)
-
-## Clonar (equipo)
+## Clonar
 
 ```bash
 git clone https://github.com/JAVGP444/The-NewsBreakers.git

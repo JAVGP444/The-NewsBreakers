@@ -1,0 +1,27 @@
+# CODEOWNERS — revisores automáticos en Pull Requests
+# Documentación: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Sustituye @JAVGP444 por los usuarios de GitHub de cada responsable cuando el equipo crezca.
+# Ejemplo: /api/ @JAVGP444 @compañero-backend
+
+# Propietario por defecto de todo el repositorio
+* @JAVGP444
+
+# Backend — FastAPI y motor de verificación
+/api/ @JAVGP444
+
+# Frontend — Next.js
+/web/ @JAVGP444
+
+# Extensión Chrome
+/extension/ @JAVGP444
+
+# Configuración compartida (YAML, fuentes, keywords)
+/config/ @JAVGP444
+
+# Documentación y guías de equipo
+/docs/ @JAVGP444
+
+# Scripts de arranque y utilidades
+/scripts/ @JAVGP444
+/tools/ @JAVGP444

@@ -11,6 +11,10 @@ node_modules/
 .next/
 out/
 
+# Servicios en background
+logs/
+.run/
+
 # Datos locales (mantener estructura, no archivos pesados)
 data/raw/*
 data/processed/*
